@@ -1,95 +1,68 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+import styles from "./home.module.css";
 
 export default function Home() {
-  return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  );
+	return (
+		<main className={styles.main}>
+			<div className={styles.wrapper}>
+				<div className={styles.titleWrapper}>
+					<div className={styles.imageContainer}>
+						<h1>HELLO</h1>
+						<Image src="/images/pfp_calo-somoza_sebastian.jpg" alt="Sebastian Profile Photo" width={150} height={150} />
+						<h1>WORLD</h1>
+					</div>
+					<p>
+						My name is Sebastian and I studied computer science at University at Buffalo. Professionally I make software and am working on expanding into sustainability software.
+						Amateurishly, I like to bodybuild, draw, make music, and read!
+					</p>
+				</div>
+				<div className={styles.contentWrapper}>
+					<div className={styles.hobbiesWrapper}>
+						<h2>Current Hobbies</h2>
+						<ul>
+							<li>
+								Weight Lifting
+								<ul>
+									<li>Becoming big and strong so I can bring in the groceries in one trip 💪</li>
+									<li>Also to be comically large in a profession that doesn&#39;t need me to be</li>
+								</ul>
+							</li>
+							<li>
+								Drawing
+								<ul>
+									<li>Learning pixel art in Aseprite</li>
+									<li>I like drawing skeletons ☠️</li>
+								</ul>
+							</li>
+							<li>
+								Music
+								<ul>
+									<li>Playing electronic music. I&#39;ll lyk when I finally make a song and don&#39;t just play with sound design for 3 hours straight</li>
+									<li>Washed piano player (sorry, mom)</li>
+								</ul>
+							</li>
+							<li>
+								Videogames
+								<ul>
+									<li>I&#39;ve played several thousand hours of games over my lifetime. Check out my steam account for a good estimate on what I like to play :&#40;</li>
+									<li>Steam</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div className={styles.skillsWrapper}>
+						<h2>Skills</h2>
+					</div>
+					<div className={styles.readingListWrapper}>
+						<h2>Reading List</h2>
+						<p>
+							Check out my list of past reads! I like to read stuff about nature, sci-fi, and really anything else recommended to me. If you&#39;ve got a good recommendation, tell me
+							about it!
+						</p>
+						<p>Good reads</p>
+					</div>
+				</div>
+			</div>
+		</main>
+	);
 }
