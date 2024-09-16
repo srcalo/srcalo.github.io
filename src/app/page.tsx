@@ -2,15 +2,15 @@ import Image from "next/image";
 import styles from "./styles/home.module.scss";
 import TextLink from "./util/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGoodreads } from "@fortawesome/free-brands-svg-icons";
+import { faGoodreads, faSteam } from "@fortawesome/free-brands-svg-icons";
 
 export default function Home() {
 	return (
-		<main className={"main"}>
-			<div className={"wrapper"}>
-				<div className={styles.titleWrapper}>
+		<main className="main">
+			<div className="wrapper">
+				<section className={styles.titleWrapper}>
 					<div className={styles.imageContainer}>
-						<h1 title={"HELLO"}>
+						<h1 title="HELLO">
 							<span>H</span>
 							<span>E</span>
 							<span>L</span>
@@ -18,7 +18,7 @@ export default function Home() {
 							<span>O</span>
 						</h1>
 						<Image src="/images/pfp_calo-somoza_sebastian.jpg" alt="Sebastian Profile Photo" width={150} height={150} />
-						<h1 className={"primary"} title="WORLD">
+						<h1 className="primary" title="WORLD">
 							<span>W</span>
 							<span>O</span>
 							<span>R</span>
@@ -27,11 +27,11 @@ export default function Home() {
 						</h1>
 					</div>
 					<p>
-						My name is <span className={"primary"}>Sebastian</span> and I studied computer science at University at Buffalo. Professionally I make software and am working on expanding into
+						My name is <span className="primary">Sebastian</span> and I studied computer science at University at Buffalo. Professionally I make software and am working on expanding into
 						sustainability software. Amateurishly, I like to bodybuild, draw, make music, and read!
 					</p>
-				</div>
-				<div className={styles.contentWrapper}>
+				</section>
+				<section className={styles.contentWrapper}>
 					<div className={styles.hobbiesWrapper}>
 						<h2>Current Hobbies</h2>
 						<ul>
@@ -52,15 +52,19 @@ export default function Home() {
 							<li>
 								Music
 								<ul>
-									<li>Playing electronic music. I&#39;ll lyk when I finally make a song and don&#39;t just play with sound design for 3 hours straight</li>
-									<li>Washed piano player (sorry, mom)</li>
+									<li>Making electronic music. I&#39;ll lyk when I finally make a song and don&#39;t just play with sound design for 3 hours straight</li>
+									<li>Washed piano player &#40;sorry, mom&#41;</li>
 								</ul>
 							</li>
 							<li>
 								Videogames
 								<ul>
-									<li>I&#39;ve played several thousand hours of games over my lifetime. Check out my steam account for a good estimate on what I like to play :&#40;</li>
-									<li>Steam</li>
+									<li>I&#39;ve played several thousand hours of games over my lifetime. Check out my steam account for a good estimate on what I like to play :&#41;</li>
+									<li>
+										<TextLink href="https://steamcommunity.com/id/BeanSpace/">
+											<FontAwesomeIcon icon={faSteam} /> Steam
+										</TextLink>
+									</li>
 								</ul>
 							</li>
 						</ul>
@@ -77,7 +81,7 @@ export default function Home() {
 							<FontAwesomeIcon icon={faGoodreads} /> Good Reads
 						</TextLink>
 					</div>
-				</div>
+				</section>
 			</div>
 		</main>
 	);

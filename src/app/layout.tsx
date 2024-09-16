@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 
 import "./styles/globals.scss";
 import "@fortawesome/fontawesome-svg-core/styles.css";
+import Footer from "./util/footer";
 
 const minecraft = localFont({ src: "../../public/fonts/Minecraftia-Regular.ttf" });
 
@@ -13,9 +14,14 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+	console.log("Why are you looking in here? Are you a nerd like me?");
+
 	return (
 		<html lang="en">
-			<body>{children}</body>
+			<body>
+				{children}
+				<Footer />
+			</body>
 		</html>
 	);
 }
