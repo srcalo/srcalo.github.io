@@ -14,8 +14,6 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-	console.log("Why are you looking in here? Are you a nerd like me?");
-
 	return (
 		<html lang="en">
 			<body>

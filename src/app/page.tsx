@@ -4,27 +4,29 @@ import TextLink from "./util/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGoodreads, faSteam } from "@fortawesome/free-brands-svg-icons";
 
+import SkillsList from "./util/skillsList";
+
 export default function Home() {
 	return (
 		<main className="main">
 			<div className="wrapper">
 				<section className={styles.titleWrapper}>
 					<div className={styles.imageContainer}>
-						<h1 title="HELLO">
+						<div title="HELLO">
 							<span>H</span>
 							<span>E</span>
 							<span>L</span>
 							<span>L</span>
 							<span>O</span>
-						</h1>
+						</div>
 						<Image src="/images/pfp_calo-somoza_sebastian.jpg" alt="Sebastian Profile Photo" width={150} height={150} />
-						<h1 className="primary" title="WORLD">
+						<div className="primary" title="WORLD">
 							<span>W</span>
 							<span>O</span>
 							<span>R</span>
 							<span>L</span>
 							<span>D</span>
-						</h1>
+						</div>
 					</div>
 					<p>
 						My name is <span className="primary">Sebastian</span> and I studied computer science at University at Buffalo. Professionally I make software and am working on expanding into
@@ -71,7 +73,7 @@ export default function Home() {
 					</div>
 					<div className={styles.skillsWrapper}>
 						<h2>Skills</h2>
-						{/* <SkillsList /> */}
+						<SkillsList />
 					</div>
 					<div className={styles.readingListWrapper}>
 						<h2>Reading List</h2>
