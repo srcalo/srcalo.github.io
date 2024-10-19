@@ -1,12 +1,11 @@
 "use client";
 
 import f from "../styles/footer.module.scss";
-import { useState, useEffect } from "react";
 import { Typewriter } from "react-simple-typewriter";
 
 const phrases: string[] = [
 	"If you thought I was cool, let's chat :)",
-	"Would you like to grab some lunch?",
+	"Let's grab lunch together?",
 	"Don't be shy, say hello!",
 	"I hope you enjoy your stay",
 	"Sometimes I wonder if I'm being watched",

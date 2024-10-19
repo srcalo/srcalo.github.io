@@ -4,7 +4,7 @@
 }
 
 :root {
-	--max-width: 1000px;
+	--content-width: 1000px;
 	--border-radius: 12px;
 	--font-mono: "Roboto Mono", monospace;
 
@@ -54,18 +54,19 @@ li {
 li > ul {
 	padding-left: 2em;
 }
+
 .primary {
 	color: var(--primary-color);
 }
 
 .main {
-	padding-top: 100px;
+	padding-top: 75px;
 	min-height: 100vh;
 	margin-bottom: -50px;
 }
 
 .wrapper {
-	max-width: var(--max-width);
+	max-width: var(--content-width);
 	width: 70vw;
 	margin: auto;
 }

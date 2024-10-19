@@ -54,7 +54,7 @@ export default function Home() {
 							<li>
 								Music
 								<ul>
-									<li>Making electronic music. I&#39;ll lyk when I finally make a song and don&#39;t just play with sound design for 3 hours straight</li>
+									<li>Making electronic music. Mostly making funny noises instead of whole songs</li>
 									<li>Washed piano player &#40;sorry, mom&#41;</li>
 								</ul>
 							</li>

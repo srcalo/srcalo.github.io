@@ -1,6 +1,6 @@
 import sk from "../styles/home.module.scss";
 
-const skills: string[] = ["Python", "Javascript", "React", "NextJS", "PHP", "Pytorch", "NumPy"];
+const skills: string[] = ["Python", "Javascript", "React", "NextJS", "PHP", "SCSS", "Pytorch", "NumPy", "Docker", "Git"];
 const listItems = skills.map((skill, i) => (
 	<div key={String(i)} className={sk.item}>
 		{skill}
