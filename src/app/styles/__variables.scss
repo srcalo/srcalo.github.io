@@ -1,0 +1,18 @@
+$font-mono: "Roboto Mono", monospace;
+
+$content-width: 1000px;
+$border-radius: 12px;
+
+/* Colors */
+$background-color: #fff6ed;
+$primary-color: #6b91d6;
+$text-color: #000000;
+$stroke-color: #5062c3;
+
+/* Viewport breakpoints */
+
+@mixin for-handheld-only {
+	@media (max-width: 1050px) {
+		@content;
+	}
+}

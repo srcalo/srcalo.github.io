@@ -1,4 +1,5 @@
 import Link from "next/link";
+import "../styles/footer.scss";
 
 interface TextLinkProps {
 	href: string;

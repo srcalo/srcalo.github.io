@@ -1,3 +1,5 @@
+@import "__variables.scss";
+
 .titleWrapper {
 	max-width: 550px;
 	margin: auto;
@@ -42,8 +44,8 @@
 		padding: 0.5em;
 		margin-right: 0.5em;
 		margin-bottom: 0.5em;
-		border: 2px solid var(--stroke-color);
-		background-color: var(--primary-color);
+		border: 2px solid $stroke-color;
+		background-color: $primary-color;
 		color: white;
 	}
 }

@@ -1,17 +1,8 @@
+@import "__variables.scss";
+
 @font-face {
 	font-family: "Minecraftia";
 	src: url(../../../public/fonts/Minecraftia-Regular.ttf);
-}
-
-:root {
-	--content-width: 1000px;
-	--border-radius: 12px;
-	--font-mono: "Roboto Mono", monospace;
-
-	--background-color: #fff6ed;
-	--primary-color: #6b91d6;
-	--text-color: #000000;
-	--stroke-color: #5062c3;
 }
 
 * {
@@ -27,9 +18,9 @@ body {
 }
 
 body {
-	background-color: var(--background-color);
-	color: var(--text-color);
-	font-family: var(--font-mono);
+	background-color: $background-color;
+	color: $text-color;
+	font-family: $font-mono;
 }
 
 h1,
@@ -38,12 +29,12 @@ h2 {
 }
 
 a {
-	color: var(--primary-color);
+	color: $primary-color;
 	text-decoration: none;
 }
 a:hover {
 	color: white;
-	background-color: var(--primary-color);
+	background-color: $primary-color;
 }
 
 ul,
@@ -56,17 +47,16 @@ li > ul {
 }
 
 .primary {
-	color: var(--primary-color);
+	color: $primary-color;
 }
 
 .main {
-	padding-top: 75px;
+	padding: 75px 0;
 	min-height: 100vh;
-	margin-bottom: -50px;
-}
 
-.wrapper {
-	max-width: var(--content-width);
-	width: 70vw;
-	margin: auto;
+	.wrapper {
+		max-width: $content-width;
+		width: 70vw;
+		margin: auto;
+	}
 }
