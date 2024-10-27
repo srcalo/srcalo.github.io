@@ -1,18 +1,61 @@
-$font-mono: "Roboto Mono", monospace;
+@use "sass:color";
 
-$content-width: 1000px;
+/* Index */
+// 1. Sizing
+// 2. Colors
+// 3. Breakpoints
+
+$content-max-width: 1000px;
+$content-width: 80vw;
 $border-radius: 12px;
+
+$footer-height-wide: 3rem;
+$footer-height-thin: 7rem;
+
+@font-face {
+	font-family: "Minecraftia";
+	src: url(../../../public/fonts/Minecraftia-Regular.ttf);
+}
+$font-mono: "Roboto Mono", monospace;
 
 /* Colors */
 $background-color: #fff6ed;
+
 $primary-color: #6b91d6;
+$primary-color-light: color.adjust($primary-color, $lightness: 10%);
+$primary-color-dark: color.adjust($primary-color, $lightness: -20%);
 $text-color: #000000;
-$stroke-color: #5062c3;
+$text-color-light: color.adjust($text-color, $lightness: 50%);
+
+$white-gray: #d6d6d6;
 
 /* Viewport breakpoints */
-
-@mixin for-handheld-only {
+@mixin medium-view {
 	@media (max-width: 1050px) {
 		@content;
+	}
+}
+
+@mixin small-view {
+	@media (max-width: 650px) {
+		@content;
+	}
+}
+
+/* Mixins */
+
+@mixin sticky-footer {
+	body {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.main {
+		flex: 1 0 auto;
+	}
+
+	.footer {
+		position: static;
+		flex-shrink: 0;
 	}
 }

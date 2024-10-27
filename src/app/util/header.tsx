@@ -1,15 +1,14 @@
-import h from "../styles/header.module.scss";
 import TextLink from "./link";
 
 export default function Header() {
 	return (
-		<header className={h.header}>
-			<div className={h.headerWrapper}>
-				<div className={h.authorInfo}>
-					<div className={h.title}>Sebastian C.</div>
-					<div className={h.subtitle}>he/him</div>
+		<header className={"header"}>
+			<div className={"headerWrapper"}>
+				<div className={"authorInfo"}>
+					<div className={"title"}>Sebastian C.</div>
+					<div className={"subtitle"}>He/Him</div>
 				</div>
-				<nav className={h.navbar}>
+				<nav className={"navbar"}>
 					<TextLink href="/">Home</TextLink>
 					<TextLink href="/">Gallery</TextLink>
 				</nav>

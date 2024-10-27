@@ -30,10 +30,14 @@ export default function Home() {
 					</div>
 					<p>
 						My name is <span className="primary">Sebastian</span> and I studied computer science at University at Buffalo. Professionally I make software and am working on expanding into
-						sustainability software. Amateurishly, I like to bodybuild, draw, make music, and read!
+						sustainability software. Amateurishly, I like to exercise, draw, read, and explore!
 					</p>
 				</section>
 				<section className={styles.contentWrapper}>
+					<div className={styles.skillsWrapper}>
+						<h2>Skills</h2>
+						<SkillsList />
+					</div>
 					<div className={styles.hobbiesWrapper}>
 						<h2>Current Hobbies</h2>
 						<ul>
@@ -70,10 +74,6 @@ export default function Home() {
 								</ul>
 							</li>
 						</ul>
-					</div>
-					<div className={styles.skillsWrapper}>
-						<h2>Skills</h2>
-						<SkillsList />
 					</div>
 					<div className={styles.readingListWrapper}>
 						<h2>Reading List</h2>
