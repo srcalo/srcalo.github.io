@@ -1,9 +1,11 @@
 @import "__variables.scss";
 
 /* Index: */
-// 1. Header
-// 2. General
-// 3. Footer
+// - General
+// - Font Sizing
+// - Header
+// - Content
+// - Footer
 
 /* General */
 
@@ -18,6 +20,7 @@ body {
 	height: 100%;
 	max-width: 100vw;
 	overflow-x: hidden;
+	line-height: 1.3;
 }
 
 body {
@@ -30,7 +33,6 @@ h1,
 h2 {
 	color: black;
 	font-weight: 400;
-	margin-bottom: 0.5rem;
 }
 
 a {
@@ -50,11 +52,31 @@ li {
 }
 
 li > ul {
-	padding-left: 2rem;
+	padding-left: 2em;
 }
 
 .primary {
 	color: $primary-color;
+}
+
+/* Font Sizing */
+
+h1 {
+	font-size: 3rem;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h1 {
+	font-size: 1.5rem;
+}
+
+h1,
+h2,
+h3 {
+	margin-bottom: 0.5em;
 }
 
 /* Header */
@@ -62,9 +84,10 @@ li > ul {
 .header {
 	width: 100%;
 	position: fixed;
-	padding-top: 1rem;
+	padding-top: $header-vert-padding;
 	background-color: rgba($background-color, 0.8);
 	backdrop-filter: blur(5px);
+	height: 4rem;
 
 	.headerWrapper {
 		max-width: calc($content-max-width + 10rem);
@@ -104,15 +127,29 @@ li > ul {
 	}
 }
 
+@include xs-view {
+	.header {
+		padding: $header-vert-padding 0;
+		.headerWrapper {
+			flex-direction: column;
+			height: 5rem;
+		}
+	}
+}
+
 /* Content */
 
 .main {
 	padding-top: 5rem;
 	padding-bottom: calc($footer-height-wide + 2rem);
 
-	@include medium-view {
+	@include m-view {
 		display: flex;
 		padding-bottom: 2rem;
+	}
+
+	@include xs-view {
+		padding-top: calc(5rem + 2 * $header-vert-padding);
 	}
 
 	.wrapper {
@@ -120,7 +157,7 @@ li > ul {
 		width: $content-width;
 		margin: auto;
 
-		@include small-view {
+		@include s-view {
 			.wrapper {
 				width: 85vw;
 			}
@@ -175,7 +212,7 @@ li > ul {
 	}
 }
 
-@include medium-view {
+@include m-view {
 	@include sticky-footer;
 
 	.footer {

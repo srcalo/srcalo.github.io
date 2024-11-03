@@ -1,5 +1,6 @@
 @use "sass:color";
-
+// @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 /* Index */
 // 1. Sizing
 // 2. Colors
@@ -9,6 +10,7 @@ $content-max-width: 1000px;
 $content-width: 80vw;
 $border-radius: 12px;
 
+$header-vert-padding: 16px;
 $footer-height-wide: 3rem;
 $footer-height-thin: 7rem;
 
@@ -16,8 +18,8 @@ $footer-height-thin: 7rem;
 	font-family: "Minecraftia";
 	src: url(../../../public/fonts/Minecraftia-Regular.ttf);
 }
-$font-mono: "Roboto Mono", monospace;
-
+// $font-mono: "Roboto Mono", monospace;
+$font-mono: "Urbanist", sans-serif;
 /* Colors */
 $background-color: #fff6ed;
 
@@ -30,20 +32,25 @@ $text-color-light: color.adjust($text-color, $lightness: 50%);
 $white-gray: #d6d6d6;
 
 /* Viewport breakpoints */
-@mixin medium-view {
-	@media (max-width: 1050px) {
+@mixin m-view {
+	@media (max-width: 65rem) {
 		@content;
 	}
 }
 
-@mixin small-view {
-	@media (max-width: 650px) {
+@mixin s-view {
+	@media (max-width: 40rem) {
+		@content;
+	}
+}
+
+@mixin xs-view {
+	@media (max-width: 28rem) {
 		@content;
 	}
 }
 
 /* Mixins */
-
 @mixin sticky-footer {
 	body {
 		display: flex;
