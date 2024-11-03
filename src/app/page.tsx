@@ -28,9 +28,10 @@ export default function Home() {
 							<span>D</span>
 						</div>
 					</div>
+					<p className={styles.subtitle}>Jack of all trades, Master of none</p>
 					<p>
 						My name is <span className="primary">Sebastian</span> and I studied computer science at University at Buffalo. Professionally I make software and am working on expanding into
-						sustainability software. Amateurishly, I like to exercise, draw, read, and explore!
+						the sustainability industry. Amateurishly, I like to exercise, create, read, and explore!
 					</p>
 				</section>
 				<section className={styles.contentWrapper}>
@@ -51,14 +52,21 @@ export default function Home() {
 							<li>
 								Drawing
 								<ul>
-									<li>Learning pixel art in Aseprite</li>
-									<li>I like drawing skeletons ☠️</li>
+									<li>
+										Learning pixel art in <TextLink href="https://www.aseprite.org/">Aseprite</TextLink> and how to draw on paper 🎨
+									</li>
+									<li>
+										Also exploring the world of <TextLink href="https://inconvergent.net/generative/">generative art</TextLink> and{" "}
+										<TextLink href="https://en.wikipedia.org/wiki/Emergence">emergent behavior</TextLink>
+									</li>
 								</ul>
 							</li>
 							<li>
 								Music
 								<ul>
-									<li>Making electronic music. Mostly making funny noises instead of whole songs</li>
+									<li>
+										Playing with sound design in <TextLink href="https://www.reaper.fm/">Reaper</TextLink> because I won't pay for FL studio 🎹
+									</li>
 									<li>Washed piano player &#40;sorry, mom&#41;</li>
 								</ul>
 							</li>
@@ -70,6 +78,7 @@ export default function Home() {
 										<TextLink href="https://steamcommunity.com/id/BeanSpace/">
 											<FontAwesomeIcon icon={faSteam} /> Steam
 										</TextLink>
+										🕹️
 									</li>
 								</ul>
 							</li>
