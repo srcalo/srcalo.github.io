@@ -4,13 +4,14 @@ export default function Header() {
 	return (
 		<header className={"header"}>
 			<div className={"headerWrapper"}>
-				<div className={"authorInfo"}>
+				<TextLink href="/" className="authorInfo">
 					<div className={"title"}>Sebastian C.</div>
 					<div className={"subtitle"}>He/Him</div>
-				</div>
+				</TextLink>
+
 				<nav className={"navbar"}>
 					<TextLink href="/">Home</TextLink>
-					<TextLink href="/">Gallery</TextLink>
+					<TextLink href="/gallery">Gallery</TextLink>
 				</nav>
 			</div>
 		</header>
