@@ -1,4 +1,5 @@
 import TextLink from "./link";
+import Navbar from "./navbar";
 
 export default function Header() {
 	return (
@@ -8,11 +9,7 @@ export default function Header() {
 					<div className={"title"}>Sebastian C.</div>
 					<div className={"subtitle"}>He/Him</div>
 				</TextLink>
-
-				<nav className={"navbar"}>
-					<TextLink href="/">Home</TextLink>
-					<TextLink href="/gallery">Gallery</TextLink>
-				</nav>
+				<Navbar />
 			</div>
 		</header>
 	);

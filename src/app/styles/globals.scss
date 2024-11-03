@@ -123,16 +123,18 @@ h3 {
 			width: 10rem;
 			justify-self: end;
 
-			a {
-				font-size: 1.05rem;
-				background: $primary-color;
-				color: white;
-				padding: 0 0.25rem;
+			.active {
+				border: 0.15rem solid #305cab;
 			}
 
-			a:hover {
-				background: $primary-color-dark;
+			a {
+				font-size: 1.05rem;
+
+				// Use box shadow instead of border when there are more than two elements
+				// box-shadow: 2px 2px 1px 0px rgba(0, 0, 0, 0.51);
 			}
+
+			align-self: hover;
 		}
 	}
 }
@@ -224,6 +226,24 @@ main {
 			text-align: right;
 		}
 	}
+}
+
+.eyeCatcher span:nth-child(2) {
+	@keyframes cursor-blink {
+		0% {
+			opacity: 0;
+		}
+
+		50% {
+			opacity: 1;
+		}
+
+		100% {
+			opacity: 0;
+		}
+	}
+
+	animation: cursor-blink 1s steps(1) infinite;
 }
 
 @include m-view {
