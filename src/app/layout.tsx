@@ -1,13 +1,9 @@
 import type { Metadata } from "next";
 
-import localFont from "next/font/local";
-
 import "./styles/globals.scss";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import Header from "./util/header";
 import Footer from "./util/footer";
-
-// const minecraft = localFont({ src: "../../public/fonts/Minecraftia-Regular.ttf" });
 
 export const metadata: Metadata = {
 	title: "Sebastian Calo",
