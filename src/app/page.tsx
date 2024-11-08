@@ -66,7 +66,7 @@ export default function Home() {
 							Music
 							<ul>
 								<li>
-									Playing with sound design in <TextLink href="https://www.reaper.fm/">Reaper</TextLink> because I won't pay for FL studio 🎹
+									Playing with sound design in <TextLink href="https://www.reaper.fm/">Reaper</TextLink> because I won&apos;t pay for FL studio 🎹
 								</li>
 								<li>Washed piano player &#40;sorry, mom&#41;</li>
 							</ul>
