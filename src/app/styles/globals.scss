@@ -133,8 +133,6 @@ h3 {
 				// Use box shadow instead of border when there are more than two elements
 				// box-shadow: 2px 2px 1px 0px rgba(0, 0, 0, 0.51);
 			}
-
-			align-self: hover;
 		}
 	}
 }
@@ -229,6 +227,8 @@ main {
 }
 
 .eyeCatcher span:nth-child(2) {
+	animation: cursor-blink 1s steps(1) infinite;
+
 	@keyframes cursor-blink {
 		0% {
 			opacity: 0;
@@ -242,8 +242,6 @@ main {
 			opacity: 0;
 		}
 	}
-
-	animation: cursor-blink 1s steps(1) infinite;
 }
 
 @include m-view {
