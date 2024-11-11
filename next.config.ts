@@ -8,8 +8,7 @@ if (env === "production") {
 		output: "export",
 		poweredByHeader: false,
 		images: {
-			loader: "akamai",
-			path: "https://srcalo.github.io/",
+			unoptimized: true,
 		},
 		experimental: {
 			useLightningcss: true,
