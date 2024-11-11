@@ -9,7 +9,7 @@ if (env === "production") {
 		poweredByHeader: false,
 		images: {
 			loader: "akamai",
-			path: "",
+			path: "https://srcalo.github.io/",
 		},
 		experimental: {
 			useLightningcss: true,
