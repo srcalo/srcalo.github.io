@@ -7,6 +7,7 @@
 // - Content Layout
 // - Footer
 // - Extra
+
 /* General */
 
 * {
@@ -282,4 +283,12 @@ main {
 
 .placeHolder {
 	text-align: center;
+}
+
+.errorWrapper {
+	text-align: center;
+
+	p {
+		padding-bottom: 1em;
+	}
 }

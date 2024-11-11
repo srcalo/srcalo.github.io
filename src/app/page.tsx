@@ -19,7 +19,7 @@ export default function Home() {
 						<span>O</span>
 					</div>
 					<div className={styles.imageWrapper}>
-						<Image fill src="./images/pfp_calo-somoza_sebastian.jpg" alt="Sebastian Profile Photo" />
+						<Image fill src="/images/pfp_calo-somoza_sebastian.jpg" alt="Sebastian Profile Photo" />
 					</div>
 					<div className={`${styles.titleText} primary`} title="WORLD">
 						<span>W</span>
