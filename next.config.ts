@@ -9,6 +9,7 @@ if (env === "production") {
 		poweredByHeader: false,
 		images: {
 			loader: "akamai",
+			path: "",
 		},
 		experimental: {
 			useLightningcss: true,
