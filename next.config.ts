@@ -2,14 +2,14 @@
 
 const env: string = process.env.NODE_ENV;
 
-let nextConfig;
-if (env === "development") {
-	nextConfig = {};
-} else {
+let nextConfig = {};
+if (env === "production") {
 	nextConfig = {
 		output: "export",
-		// basePath: "/nextjs-github-pages",
 		poweredByHeader: false,
+		images: {
+			loader: "akamai",
+		},
 		experimental: {
 			useLightningcss: true,
 		},
