@@ -29,7 +29,7 @@ export default function Home() {
 						<span>D</span>
 					</div>
 				</div>
-				<p className={styles.subtitle}>Jack of all trades, Master of none</p>
+				<p className={styles.subtitle}>Doing my best to see the beauty in life</p>
 				<p>
 					My name is <span className="primary">Sebastian</span> and I studied computer science at University at Buffalo. Professionally I make software and am working on expanding into the
 					sustainability industry. Amateurishly, I like to exercise, create, read, and explore!
