@@ -13,15 +13,19 @@ $header-vert-margin: 16px;
 $footer-height-wide: 3rem;
 $footer-height-thin: 7rem;
 
+$section-spacing: 3rem;
+
 // $font-mono: "Roboto Mono", monospace;
 $font-mono: "Urbanist", sans-serif;
 /* Colors */
-$background-color: #ffeecb;
+$background-color: #fff5fa;
 
-$primary-color: #6b91d6;
+$primary-color: #b750ea;
 $primary-color-light: color.adjust($primary-color, $lightness: 10%);
 $primary-color-dark: color.adjust($primary-color, $lightness: -20%);
-$text-color: #000000;
+$secondary-color: #d400d4;
+$accent-color: #3d1df4;
+$text-color: #070226;
 $text-color-light: color.adjust($text-color, $lightness: 50%);
 
 $white-gray: #d6d6d6;

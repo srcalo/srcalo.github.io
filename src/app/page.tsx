@@ -8,32 +8,23 @@ import SkillsList from "./util/skillsList";
 
 export default function Home() {
 	return (
-		<>
+		<div className={styles.subWrapper}>
 			<section className={styles.summaryWrapper}>
-				<div className={styles.titleContainer}>
-					<div className={styles.titleText} title="HELLO">
-						<span>H</span>
-						<span>E</span>
-						<span>L</span>
-						<span>L</span>
-						<span>O</span>
-					</div>
+				<div className={styles.titleImageContainer}>
 					<div className={styles.imageWrapper}>
 						<Image fill src="/images/pfp_calo-somoza_sebastian.jpg" alt="Sebastian Profile Photo" />
 					</div>
-					<div className={`${styles.titleText} primary`} title="WORLD">
-						<span>W</span>
-						<span>O</span>
-						<span>R</span>
-						<span>L</span>
-						<span>D</span>
-					</div>
 				</div>
-				<p className={styles.subtitle}>Doing my best to see the beauty in life</p>
-				<p>
-					My name is <span className="primary">Sebastian</span> and I studied computer science at University at Buffalo. Professionally I make software and am working on expanding into the
-					sustainability industry. Amateurishly, I like to exercise, create, read, and explore!
-				</p>
+				<div className={styles.titleText}>
+					<h1 className={styles.subtitle}>
+						Witnessing the beauty in <span className="gradient">everything.</span>
+					</h1>
+					<p className={styles.titleParagraph}>
+						My name is <span className="primary">Sebastian</span> and I'm a software developer currently searching for work. I love the environment and the natural world for its
+						unfathomable complexity emerging from the individuals within doing nothing but going about their day. I also explore the arts, weightlift and other physical activities, and
+						experience all the world has to offer 😁
+					</p>
+				</div>
 			</section>
 			<section className={styles.contentWrapper}>
 				<div className={styles.skillsWrapper}>
@@ -94,6 +85,6 @@ export default function Home() {
 					</TextLink>
 				</div>
 			</section>
-		</>
+		</div>
 	);
 }

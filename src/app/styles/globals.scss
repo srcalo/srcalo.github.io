@@ -32,8 +32,8 @@ body {
 
 h1,
 h2 {
-	color: black;
-	font-weight: 400;
+	color: $text-color;
+	font-weight: normal;
 }
 
 a {
@@ -58,6 +58,12 @@ li > ul {
 
 .primary {
 	color: $primary-color;
+}
+
+.gradient {
+	color: transparent;
+	background: linear-gradient(120deg, $primary-color, $accent-color);
+	background-clip: text;
 }
 
 /* Font Sizing */
@@ -110,11 +116,11 @@ h3 {
 			background-color: transparent;
 
 			.title {
-				font-size: 1.25rem;
+				font-size: 1.5rem;
 			}
 
 			.subtitle {
-				color: $text-color-light;
+				color: $primary-color;
 			}
 		}
 
@@ -125,14 +131,27 @@ h3 {
 			justify-self: end;
 
 			.active {
-				border: 0.15rem solid #305cab;
+				background: linear-gradient(120deg, $primary-color, $accent-color);
+				background-clip: text;
+				color: transparent;
+				font-weight: 600;
 			}
 
 			a {
-				font-size: 1.05rem;
-
+				font-size: 1.25rem;
+				background: none;
+				color: $text-color;
 				// Use box shadow instead of border when there are more than two elements
 				// box-shadow: 2px 2px 1px 0px rgba(0, 0, 0, 0.51);
+			}
+
+			a:after {
+				content: "";
+
+				float: left;
+				width: 100%;
+				height: 3px;
+				border-radius: $border-radius;
 			}
 		}
 	}
@@ -155,7 +174,7 @@ h3 {
 /* Content layout */
 
 main {
-	padding-top: 5rem;
+	padding-top: 8rem;
 	padding-bottom: calc($footer-height-wide + 2rem);
 
 	@include m-view {
@@ -164,7 +183,7 @@ main {
 	}
 
 	@include xs-view {
-		padding-top: calc(5rem + 2 * $header-vert-margin);
+		padding-top: 9rem;
 	}
 
 	.wrapper {
@@ -189,7 +208,7 @@ main {
 	height: $footer-height-wide;
 	width: 100vw;
 	padding: 0 1rem;
-	background-color: #11151c;
+	background-color: $primary-color-dark;
 	color: white;
 
 	.footerWrapper {

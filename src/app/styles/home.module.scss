@@ -1,36 +1,47 @@
 @import "__variables.scss";
 
 .summaryWrapper {
-	max-width: 32rem;
 	margin: auto;
 	margin-bottom: 2rem;
+	display: flex;
+	flex-direction: row;
 
-	.titleContainer {
-		width: 10rem;
-		margin: auto;
-		margin-bottom: 1rem;
+	@include s-view {
+		flex-direction: column;
+		text-align: left;
+	}
+
+	.titleImageContainer {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		margin-right: $section-spacing;
+
+		@include s-view {
+			margin-right: 0;
+			margin-bottom: 2rem;
+		}
 
 		.imageWrapper {
 			position: relative;
 			width: 10rem;
 			height: 10rem;
 		}
-
-		.titleText {
-			width: 100%;
-			display: flex;
-			justify-content: space-between;
-			font-size: 2rem;
-		}
 	}
 
-	.subtitle {
-		text-align: center;
-		font-size: 1.1em;
-		padding-bottom: 0.25rem;
+	.titleText {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+
+		.subtitle {
+			font-size: 3rem;
+
+			@include s-view {
+				font-size: 2rem;
+			}
+		}
 	}
 }
 
@@ -38,7 +49,7 @@
 	display: grid;
 	grid-template-columns: 55% 40%;
 	grid-template-rows: 1fr 1fr;
-	column-gap: 2rem;
+	column-gap: 3rem;
 
 	@include s-view {
 		display: flex;

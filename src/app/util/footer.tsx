@@ -27,7 +27,7 @@ export default function Footer() {
 						<FontAwesomeIcon icon={faSpotify} size="2x" />
 					</TextLink>
 				</address>
-				<div className={"copyright"}>© 2024 Sebastian Calo-Somoza V1.0</div>
+				<div className={"copyright"}>© 2025 Sebastian Calo-Somoza V1.2</div>
 			</div>
 		</footer>
 	);
