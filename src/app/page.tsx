@@ -20,7 +20,7 @@ export default function Home() {
 						Witnessing the beauty in <span className="gradient">everything.</span>
 					</h1>
 					<p className={styles.titleParagraph}>
-						My name is <span className="primary">Sebastian</span> and I'm a software developer currently searching for work. I love the environment and the natural world for its
+						My name is <span className="primary">Sebastian</span> and I&apos;m a software developer currently searching for work. I love the environment and the natural world for its
 						unfathomable complexity emerging from the individuals within doing nothing but going about their day. I also explore the arts, weightlift and other physical activities, and
 						experience all the world has to offer 😁
 					</p>
